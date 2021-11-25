@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.input-form {
+  padding: 5px;
+  margin: 5px;
+}
+
+
+.quadro {
+  grid-template-columns: 10% 35% 10% 35% 10%;
+  display: grid;
+  }
+
+form {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+table{
+  grid-column: 4;
+  grid-row: 1;
+}
+
