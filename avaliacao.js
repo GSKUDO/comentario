@@ -1,8 +1,16 @@
-function enviarcomentario () {
+function enviarcomentario() {
     let nome = document.getElementById("nome").value;
     let nota = document.getElementById("nota").value;
-    let comentario = document.getElementById("comentario").value;
+    let comentario = document.getElementById("coment").value;
     let tablebody = document.getElementById("table-body");
+
+    function conferir() {
+            if (nota > 10) {
+                nota = "erro";
+            }
+    }
+
+    conferir();
 
     let html = "<tr>";
         html +="<td>" + nome + "</td>"

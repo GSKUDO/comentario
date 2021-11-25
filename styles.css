@@ -3,24 +3,70 @@
   padding: 0;
 }
 
-.input-form {
+@font-face {
+  font-family: 'enriqueta';
+  src: url(Enriqueta-Bold.ttf);
+}
+
+
+body {
+  font-family: 'enriqueta';
+  background-color: #FFF1F0;
+}
+
+#cabecalho {
+  background-image: url(cabecalho.jpg);
+  text-align: center;
+  padding-top: 100px;
+  color: rgb(153, 9, 98);
+  height: 120px;
+}
+
+.quadro {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  grid-template-columns: 10% 39% 2% 39% 10%;
+  display: grid;
+}
+
+#comentario {
+  grid-column: 2;
+  grid-row: 1;
   padding: 5px;
   margin: 5px;
 }
 
-
-.quadro {
-  grid-template-columns: 10% 35% 10% 35% 10%;
-  display: grid;
-  }
-
-form {
-  grid-column: 2;
-  grid-row: 1;
+#coment {
+  overflow: scroll;
+  height: 100px;
+  width: 300px;
 }
 
-table{
+#nome {
+  height: 30px;
+  width: 300px;
+}
+
+#nota {
+  height: 30px;
+  width: 300px;
+}
+
+#table-body {
+  overflow: scroll;
+  text-align: center;
+  border: 1px;
+  line-height: 5px;
+  border-style: solid;
+  max-height: 300px;
   grid-column: 4;
   grid-row: 1;
 }
 
+#rodape {
+  font-size: larger;
+  background-image: url(cabecalho.jpg);
+  height: 100px;
+  padding-left: 100px;
+  padding-top: 50px;
+}

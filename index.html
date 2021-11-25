@@ -7,31 +7,33 @@
     </head>
 
     <body>
-        cabecalho 
-        
-
-        <form id="comentario"> 
-            <p id="comentario"> Faça seu Comentário </p>
-            <br>
-            <input type="text" id="nome" value="" placeholder="Nome Completo">
-            <br>
-            <input type="number" id="nota" value="" placeholder="Nota">
-            <br>
-            <input type="text" id="comentario" value="" placeholder="Comentário">
-            <br>
-            <input type="button" id="enviar" value="Enviar" onclick="enviarcomentario()">
-        </form>
-        <table id="table-body">
-            <thead>
-                <th>Nome</th>
-                <th>Nota</th>
-                <th>Comentario</th>
-            </thead>
-            <tbody></tbody>
-        </table>
-
-        contato 
-        
+        <div id="cabecalho">
+            <h1>Miniempreendedora</h1>
+        </div>
+        <div class="quadro">
+            <form id="comentario"> 
+                <p> Faça seu Comentário </p>
+                <br/>
+                <input type="text" id="nome" value="" placeholder="Nome Completo">
+                <br/>
+                <input type="number" id="nota" value="" placeholder="Nota 0-10">
+                <br/>
+                <textarea type="text" id="coment" value="" placeholder="Comentário"></textarea>
+                <br/>
+                <input type="button" id="enviar" value="Enviar" onclick="enviarcomentario()">
+            </form>
+            <table id="table-body">
+                <thead>
+                    <th>Nome</th>
+                    <th>Nota</th>
+                    <th>Comentário</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="rodape">
+            <a href="https://www.instagram.com/invites/contact/?i=mrh26injmhiu&utm_content=m1frr9v"> <img src="instagram.png" height="30px"></a>
+        </div>
         <script src="avaliacao.js"></script>
     </body>
 </html>
